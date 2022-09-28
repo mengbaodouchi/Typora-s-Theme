@@ -1,0 +1,148 @@
+html {
+    font-size: 14px;
+}
+:root{
+    --side-bar-bg-color: bisque;
+    --table-border-color: #dfe2e5;
+    --table-header-bg-color: beige;
+    /* --table-bg-color: var(--bg-color); */
+}
+/* 主体部分 */
+body {
+    /* font-family:calibri,Georgia,Times New Roman; */
+    font-family: 'calibri', "Vollkorn", 'Palatino', Times;
+    background: cornsilk;
+    fill: currentColor;
+    line-height: 1.5;
+}
+/* 标题部分 */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: purple;
+    font-family:'Palatino';
+    font-weight: normal;
+    clear: both;
+    -ms-word-wrap: break-word;
+    word-wrap: break-word;
+    margin: 0;
+    padding: 0;
+    
+}
+/* 高亮及引用部分 */
+a {
+    color: #4183C4;
+}
+mark {
+    background: bisque;
+    color: purple;
+}
+#write mark {
+    background-color: beige;
+    border-radius: 2px;
+    padding: 2px 4px;
+    margin: 0 2px;
+    color: rgb(130, 180, 220);
+    font-style:italic;
+    font-weight: 500;
+}
+/* 代码块部分 */
+pre,
+code,
+.md-fences {
+    font-size:14px;
+    font-family: 'Monaco',"Helvetica Neue", "Courier New";
+    border: 1px solid #e7eaed;
+    padding: 2px 4px 0px 4px;
+    background-color: beige;
+    border-radius: 4px;
+}
+/* .cm-s-inner.CodeMirror {background: #2b2b2b; color: #cdcbcb;} */
+.cm-s-inner div.CodeMirror-selected {background: beige !important;}
+.cm-s-inner .CodeMirror-gutters {background: #2b2b2b; border-right: 0px;}
+.cm-s-inner .CodeMirror-linenumber {color: beige;}
+.cm-s-inner .CodeMirror-cursor {border-left: 1px solid #d4cfc9 !important;}
+
+.cm-s-inner .cm-builtin{ color: #76dcde;}
+.cm-s-inner .cm-meta {color: #CDCBCB;}
+
+.cm-s-inner span.cm-comment {color: #bc9458;}
+.cm-s-inner span.cm-atom {color: #b6b3eb;}
+.cm-s-inner span.cm-number {color: #b6b3eb;}
+
+.cm-s-inner span.cm-property, .cm-s-railscasts span.cm-attribute {color: #a5c261;}
+.cm-s-inner span.cm-keyword {color: red;}
+.cm-s-inner span.cm-string {color: #bc9458;}
+
+.cm-s-inner span.cm-variable {color: yellowgreen;}
+.cm-s-inner span.cm-variable-2 {color: #6d9cbe;}
+/*int等值啥意思*/
+.cm-s-inner span.cm-variable-3 {color: #6d9cbe}
+.cm-s-inner span.cm-operator {color: red;}
+.cm-s-inner span.cm-def {color: coral;}
+.cm-s-inner span.cm-error {background: red; color: #d4cfc9;}
+.cm-s-inner span.cm-bracket {color: #f4f1ed;}
+.cm-s-inner span.cm-tag {color: red;}
+.cm-s-inner span.cm-link {color: #b6b3eb;}
+
+.cm-s-inner .CodeMirror-matchingbracket { text-decoration: underline; color: white !important;}
+/* .cm-s-inner .CodeMirror-activeline-background { background: #303040; } */
+
+/* 段落、序列、表格部分 */
+p,
+blockquote,
+ul,
+ol,
+dl,
+table{
+    margin: 0.8em 0;
+}
+/* p {
+    Text-indent:5px;首行缩进
+} */
+.ty-table-edit {
+    margin-top: -1rem !important;
+}
+#write table {
+    margin-top: 1rem ;
+    word-break: initial;
+    /* background-color: var(--table-bg-color); */
+}
+table tr {
+    border-top: .1em solid var(--table-border-color);
+    margin: 0;
+    padding: 0;
+}
+table th {
+    font-weight: bold;
+    border: .1em solid var(--table-border-color);
+    border-bottom: 0;
+    margin: 0;
+    padding: 6px 13px;
+}
+table td {
+    border: .1em solid var(--table-border-color);
+    margin: 0;
+    padding: 6px 13px;
+}
+table thead {
+    background-color: var(--table-header-bg-color);
+}
+table tr:nth-child(2n) {
+    background-color: var(--table-n2-bg-color);
+}
+table tr th:first-child,
+table tr td:first-child {
+    margin-top: 0;
+}
+table tr th:last-child,
+table tr td:last-child {
+    margin-bottom: 0;
+}
+
+#write em {
+    padding: 0 5px 0 2px;
+}
